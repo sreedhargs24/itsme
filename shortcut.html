@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Actions Use Case</title>
+</head>
+<body>
+
+    <h1>Use Case for GitHub Actions: Improve Process Violation Alert</h1>
+
+    <p><strong>Topic:</strong> Code merged to landscape-repository without HCPCM ticket</p>
+
+    <p><strong>Jira Ticket:</strong> <a href="https://jira.tools.sap/browse/LLAMA-409" target="_blank">LLAMA-409</a></p>
+
+    <p><strong>Dev Branch:</strong> <a href="https://github.tools.sap/cf-live-realm/github-actions/tree/LLAMA-409/.github/workflows" target="_blank">GitHub Actions Dev Branch</a></p>
+
+    <p><strong>PR Code Review:</strong> <a href="https://github.tools.sap/cf-live-realm/github-actions/pull/1" target="_blank">GitHub PR Code Review</a></p>
+
+    <p><strong>Workflow:</strong> <a href="https://github.tools.sap/cf-live-realm/github-actions/blob/LLAMA-409/.github/workflows/pr_hcpcm_validater.yml" target="_blank">GitHub Actions Workflow</a></p>
+
+    <h2>Workflow Description:</h2>
+    <ol>
+        <li>Upon PR creation, this workflow runs</li>
+        <ul>
+            <li>Extract HCPCM Ticket Number from PR Title or Description</li>
+            <li>Add Comment Based on PR Title content</li>
+            <ul>
+                <li>No/Wrong Ticket - Comment in PR</li>
+                <li>Ticket Present - Ticket Comment</li>
+            </ul>
+        </ul>
+    </ol>
+
+</body>
+</html>
